@@ -26,9 +26,9 @@ public class DistributedMatrixMultiplier {
 
         hazelcast = Hazelcast.newHazelcastInstance(configuration);
 
-        int size = 25000;
-        int block = 1200;
-        int chunk = 250;
+        int size = 30000;
+        int block = 3000;
+        int chunk = 300;
 
         int[][] matrixA = MatrixGenerator.createMatrix(size, size);
         int[][] matrixB = MatrixGenerator.createMatrix(size, size);
